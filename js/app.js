@@ -22,3 +22,12 @@ let data = localStorage.getItem("TODO");
 if(data){
     LIST = JSON.parse
 }
+
+//Add item to local storage
+localStorage.setItem("TODO", JSON.stringify(LIST));
+
+// Show today's date
+const options = { weekday: "long", month: "short", day: "numeric" };
+const today = new Date();
+
+dateElement.innerHTML = today.toLocaleDateString("en-US", options);
