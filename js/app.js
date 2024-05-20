@@ -10,3 +10,15 @@ const input = document.getElementById("input");
 const CHECK = "fa-check-circle";
 const UNCHECK = "fa-circle-thin";
 const LINE_THROUGH = "lineThrough";
+
+//Variables
+let LIST = []
+,id = 0;
+
+//Get item from local storage
+let data = localStorage.getItem("TODO");
+
+//Check if data is not empty
+if(data){
+    LIST = JSON.parse
+}
